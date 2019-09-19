@@ -1,0 +1,19 @@
+---
+ref: microsoft_test
+name: Microsoft Test Pack
+description: Test pack that depends on specific versions of the Excel and Powerpoint packs
+keywords:
+  - example
+  - tests
+  - microsoft
+  - dependencies
+version: 0.0.1
+author: stanley
+email: stanley@localhost.local
+dependencies:
+  # Installed excel version: 0.2.0
+  # Upgrading to 0.2.4 should fail
+  - excel=0.2.4
+  # Installed powerpoint version: 0.2.2
+  # Downgrading to 0.2.0 should fail
+  - powerpoint=0.2.0
